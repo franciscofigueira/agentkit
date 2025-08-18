@@ -9,6 +9,8 @@ from .chain_definitions import (
     polygon,
     polygon_mumbai,
     sepolia,
+    zircuit,
+    zircuit_sepolia,
 )
 from .network import (
     CHAIN_ID_TO_NETWORK_ID,
@@ -32,4 +34,6 @@ __all__ = [
     "optimism",
     "polygon_mumbai",
     "polygon",
+    "zircuit",
+    "zircuit_sepolia",
 ]

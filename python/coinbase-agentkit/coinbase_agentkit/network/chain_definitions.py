@@ -357,3 +357,62 @@ polygon = Chain(
         },
     },
 )
+
+zircuit_sepolia = Chain(
+    id="48898",
+    name="Zircuit Garfield Testnet",
+    native_currency={
+        "name": "Sepolia Ether",
+        "symbol": "ETH",
+        "decimals": 18,
+    },
+    rpc_urls={
+        "default": {
+            "http": ["https://garfield-testnet.zircuit.com/"],
+        },
+    },
+    block_explorers={
+        "default": {
+            "name": "Zircuit Explorer",
+            "url": "https://explorer.garfield-testnet.zircuit.com/",
+            "api_url": "https://explorer.garfield-testnet.zircuit.com/api",
+        },
+    },
+    contracts={
+        "multicall3": {
+            "address": "0xca11bde05977b3631167028862be2a173976ca11",
+            "block_created": 2023814,
+        },
+    },
+    testnet=True,
+)
+
+zircuit = Chain(
+    id="48900",
+    name="Zircuit",
+    native_currency={
+        "name": "Ether",
+        "symbol": "ETH",
+        "decimals": 18,
+    },
+    rpc_urls={
+        "default": {
+            "http": ["https://mainnet.zircuit.com"],
+        },
+    },
+    block_explorers={
+        "default": {
+            "name": "Zircuit Explorer",
+            "url": "https://explorer.zircuit.com",
+            "api_url": "https://explorer.zircuit.com/api",
+        },
+    },
+    contracts={
+        "multicall3": {
+            "address": "0xca11bde05977b3631167028862be2a173976ca11",
+            "block_created": 2023814,
+        },
+    },
+)
+
+
